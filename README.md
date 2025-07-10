@@ -6,6 +6,9 @@
 > [!WARNING]
 > Due to some known issues, the `yarn start` command may not always work for deploying the website and using the Debug Contracts page in Scaffold-ETH 2. Please refer to the official documentation or community channels for troubleshooting and updates.
 
+> [!WARNING]
+> Debido a algunos problemas conocidos, es posible que el comando `yarn start` no siempre funcione para implementar el sitio web y usar la página Contratos de depuración en Scaffold-ETH 2. Consulte la documentación oficial o los canales de la comunidad para solucionar problemas y obtener actualizaciones.
+
 ## TESTING PROYECT OF SIMPLE SWAP
 ## FedericoS.
 ---
