@@ -42,6 +42,13 @@ npx hardhat coverage
 
 This will generate a coverage report for your smart contracts.
 
+The coverage of my testings are:
+
+![Testing Hardhat - simpleswap](https://github.com/user-attachments/assets/db3d262a-6fa5-42b0-9dd1-6791c37225ce)
+![(2) Testing Hardhat - simpleswap](https://github.com/user-attachments/assets/9a0c3a09-eee5-4437-b109-269fcffb0a4e)
+
+
+
 <h4 align="center">
   <a href="https://docs.scaffoldeth.io">Documentation</a> |
   <a href="https://scaffoldeth.io">Website</a>
