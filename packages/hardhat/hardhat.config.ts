@@ -3,14 +3,15 @@ dotenv.config();
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-ethers";
 import "@nomicfoundation/hardhat-chai-matchers";
-import "@typechain/hardhat";
-import "hardhat-gas-reporter";
 import "solidity-coverage";
-import "@nomicfoundation/hardhat-verify";
+//import "@nomicfoundation/hardhat-verify";
+import "@typechain/hardhat";
 import "hardhat-deploy";
 import "hardhat-deploy-ethers";
 import { task } from "hardhat/config";
 import generateTsAbis from "./scripts/generateTsAbis";
+
+import "@nomicfoundation/hardhat-toolbox";
 
 // If not set, it uses ours Alchemy's default API key.
 // You can get your own at https://dashboard.alchemyapi.io
@@ -54,6 +55,16 @@ const config: HardhatUserConfig = {
         url: `https://eth-mainnet.alchemyapi.io/v2/${providerApiKey}`,
         enabled: process.env.MAINNET_FORKING_ENABLED === "true",
       },
+      gas: 30000000, // 30M gas limit
+      // gasPrice: 1, // 1 wei gas price
+      initialBaseFeePerGas: 0,
+    },
+    coverage: {
+      url: "http://127.0.0.1:8555",
+      gas: 30000000, // 30M gas limit
+      // gasPrice: 1, // 1 wei gas price
+      initialBaseFeePerGas: 0,
+      allowUnlimitedContractSize: true,
     },
     mainnet: {
       url: `https://eth-mainnet.alchemyapi.io/v2/${providerApiKey}`,
